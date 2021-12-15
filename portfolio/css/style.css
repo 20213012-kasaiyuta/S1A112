@@ -4,6 +4,7 @@ body {
   line-height: 1.8;
   letter-spacing: .8px;
   color: #333;
+  background-color: rgb(236, 106, 106);
 }
 
 a {
@@ -138,7 +139,7 @@ li {
 }
 
 /*--------------------------------
- メインビジュアル
+メインビジュアル
 ---------------------------------*/
 .main-visual {
   display: flex;
@@ -151,20 +152,23 @@ li {
 .main-visual-inner {
   padding: 0 40px;
 }
-
+/*ゆきだるま*/
 .main-visual-title {
   font-size: 60px;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 5px;
   letter-spacing: .1em;
+  color: #333;
 }
+/*自己紹介*/
 .main-visual-subtitle {
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
   letter-spacing: .08em;
+  color: #333;
 }
 .main-visual-profile{
   display: flex;
@@ -182,13 +186,46 @@ li {
 }
 .main-visual-text {
   flex: 1;
+  color: #333;
 }
 .main-visual-text p:not(:last-child) {
   margin-bottom: 30px;
 }
+/*自画像*/
+.zigazo_main { animation: kaiten 2s ease 0s 1 normal}
+@keyframes kaiten {
+    0%{ transform:rotateY(0);}
+    100%{ transform:rotateY(360deg);}
+}
+/*雪*/
+.snow {
+  color: snow; /*雪の色*/
+  font-size: 18px; /*雪の大きさ*/
+  position: fixed;
+  top: -5%; /*初期位置*/
+  text-shadow:
+  5vw   -100px 2px,
+  10vw  -400px 3px,
+  20vw  -500px 4px,
+  30vw  -580px 1px,
+  39vw  -250px 2px,
+  42vw  -340px 5px,
+  56vw  -150px 2px,
+  63vw  -180px 0,
+  78vw  -220px 4px,
+  86vw  -320px 9px,
+  94vw  -170px 7px;
+  animation: anim 5s linear infinite;
+}
 
+@keyframes anim {
+  100% {
+    color: transparent;
+    top: 150%;
+  }
+}
 /*--------------------------------
- Works
+Works
 ---------------------------------*/
 .works-list {
   display: flex;
