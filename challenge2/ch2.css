@@ -13,19 +13,21 @@ body {
   padding: 40px;
 }
 .wrapper {
-  background: #f9f8ee;
+  background: #fdffed;
   width: 800px;
   max-width: 90%;
   margin: 0 auto;
   padding: 20px;
 }
 
+
+
 /*----------------------------
 header
 ----------------------------*/
 header { margin-bottom: 60px; }
 h1 { margin-bottom: 20px; }
-ul { background: #fff; }
+ul {background: #fff;}
 a {
   display: block;
   color: #196f6a;
@@ -52,3 +54,13 @@ em {
 /*----------------------------
 この下に、CSSの指定を記述していきましょう。
 ----------------------------*/
+body {
+  background: url(../images/wood.jpg) #504643 left top repeat ;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+li{ flex: 1 1 20%}
