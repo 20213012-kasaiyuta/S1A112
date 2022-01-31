@@ -55,7 +55,7 @@ em {
 この下に、CSSの指定を記述していきましょう。
 ----------------------------*/
 body {
-  background: url(../images/wood.jpg) #504643 left top repeat ;
+  background: url(wood.jpg) #504643 left top repeat ;
   text-align: center;
 }
 ul {

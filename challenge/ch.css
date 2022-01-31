@@ -1,50 +1,52 @@
-@charset "UTF-8";
-
-*{
+* {
     box-sizing: border-box;
     font-family: メイリオ;
     margin: 0;
 }
 body {
-    background: #f8d8bf;
+    background: #F8D8BF;
     margin: 0;
     padding: 0;
 }
-article{
-    width: 840px;
+article {
+    width: 850px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
-    position: absolute;
+    background: #fff;
+    position: relative;
 }
 header {
-    color: #fff;
-    background-color: #f83;
     padding: 10px;
+    background: #f83;
+    color: #fff;
     position: absolute;
     top: 40px;
-    left: 0px;
+    left: 0;
 }
-section{
-    border: 1px solid #ccc;
+section {
+    border:1px solid #ccc;
     padding: 10px;
 }
-img{
+img {
     display: block;
-    padding: 10px;
+    margin-bottom: 30px;
+    width: 810px;
+    height: 400px;
 }
-h2{color: #f83;}
-ul,ol{
+h2 {
+    color: #f83;
+}
+ul, ol{
     padding-left: 1.2em;
 }
-address{
+address {
     text-align: center;
 }
-.flexContainer {
+.flexContainer  {
     display: flex;
     justify-content: space-around;
 }
-.btnArea{
+.btnArea {
     margin-top: 40px;
 }
 p.btn {
